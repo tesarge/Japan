@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Eczar|Lato&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <title>Welcome to Kyoto</title>
+</head>
+<body class="kyoto" onload="startTime()">
+    <div class="top-container">
+        <h1>Kyoto</h1>
+        <p>The Historic Capital</p>
+      </div>
+      
+      <div class="header" id="myHeader">
+        <div class="navbar">
+            <a href="https://tesarge.github.io/japan/">Home</a>
+            <a href="https://tesarge.github.io/japan/travel.html">Travel</a>
+            <a href="https://tesarge.github.io/japan/events.html">Annual Events</a>
+            <div class="dropdown">
+              <button class="dropbtn">Cities
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="https://tesarge.github.io/japan/tokyo.html">Tokyo</a>
+                <a href="https://tesarge.github.io/japan/kyoto.html">Kyoto</a>
+                <a href="https://tesarge.github.io/japan/osaka.html">Osaka</a>
+                <a href="https://tesarge.github.io/japan/sapporo.html">Sapporo</a>
+                <a href="https://tesarge.github.io/japan/wakayama.html">Wakayama</a>
+                <a href="https://tesarge.github.io/japan/nara.html">Nara</a>
+                <a href="https://tesarge.github.io/japan/okinawa.html">Okinawa</a>
+              </div>
+            </div>
+          </div> 
+      </div>
+      
+      <div class="content">
+        <div class="title-copy">
+          <h1>Kyoto - the city with the most preserved buildings from throughout the history of Japan.</h1>
+          <h3>Explore Kyoto and take a walk through time in the ancient capitol city of Japan. Visit one of the may temples, walk through a tea plantation, or see where the world famous Nintendo started.</h3>
+          </div>
+
+          <div class="content2">
+          <div class="parallax"></div>
+          <div class="title-box-b">
+              <h1>Enjoy peaceful reflection at Kinkaku-ji - The Golden Pavilion</h1>
+              <h3>The landmark of Kyoto, Kinkaku-ji is a centuries old Zen Buddhist temple. The outer golden leaf walls speak for themselves - this temple is a marvel and can't be missed.</h3>
+              </div>
+              </div>
+          <div class="content3">
+              <div class="parallax"></div>
+              <div class="title-box-c">
+                  <h1>Pick your own tea at Wauka Plantation</h1>
+                  <h3>Japan is famous for producing some of the highest quality green teas on the planet. Why not come pick your own at one of the longest continuously running tea plantations in the country? Wazuka is a 30 minute train ride out of Kyoto and the relaxing atmosphere helps those wanting to escape the city bustle.</h3>
+              </div>
+          </div>
+          <div class="content4">
+            <div class="parallax"></div>
+            <div class="title-box-d">
+                <h1>Find serenity in a bamboo forest</h1>
+                <h3>On the outskirts of Kyoto is Arashiyama, a tiny village full of quaint personality. Among the most famous places in Arashiyama is the bamboo grove. Originally used to produce bamboo products, the grove is now lined with walking and biking paths to make for a relaxing time in nature.</h3>
+            </div>
+        </div>
+      </div>
+      <div class="footer-stuff">
+        <a href="https://tesarge.github.io/japan/policy.html">Our Privacy Policy</a>
+        <p id="time"></p>
+        <script>
+          function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+            h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+          }
+          function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+          }
+          </script>
+          <div id="txt"></div>
+        </div>
+</body>
+</html>

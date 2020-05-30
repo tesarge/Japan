@@ -1,0 +1,1255 @@
+$colors: (
+    bg: #EDF2F4,
+    greydark: #2B2D42,
+    greylight: #8D99AE,
+    greyopaque: #8d99ae50,
+    redlight: #EF233C,
+    reddark: #D90429,
+    );
+
+$fonts: (
+    header: 'Eczar',
+    body: 'Lato'
+    );
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+};
+
+@function font($font-type){
+    @return map-get($fonts, $font-type)
+};
+
+body{
+    margin: 0;
+    background: color(bg);
+}      
+/*REFER TO .SCSS FILE FOR CHANGES*/
+
+/*HOME PAGE*/
+
+.index{
+.top-container {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url(../images/indexhero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px;
+    text-align: center;
+    color: color(bg);
+    h1{
+        font-family: font(header);
+        font-size: 5em;
+    }
+    p{
+        font-size: 2em;
+    }
+      }
+
+    }
+
+.title-copy{
+        
+    margin: 200px;
+    h1{
+        text-align: center;
+        font-size: 3em;
+        color: color(reddark);
+        font-family: font(header)
+    }
+
+    h3{
+    font-family: font(body);
+    font-size: 2em;
+    }
+}
+
+
+/* LINKS TO CITY PAGES FROM HOME*/
+.grid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 150px;
+    }
+
+.grid-item{
+    min-width: 250px;
+    min-height: 250px;
+    background: color(greydark);
+    color: color(bg);
+    border-radius: 5px;
+    margin: 10px;
+    transition: transform 1s;
+    text-decoration: none;
+    p{
+        margin: 110px 0 0 0;
+        text-align: center;
+        font-size: 2em;
+        font-family: font(body);
+    }
+}
+
+.grid-item:hover{
+    transform: scale(1.2);
+    background: color(reddark) 1s;
+}
+
+.title-box-a{
+    min-height: 250px;
+    min-width: 1700px;
+    clip-path: polygon(0% 0%, 50% 0, 55% 50%, 50% 100%, 0% 100%);
+    background: color(redlight);
+    justify-content: center;
+    padding: 10px 100px 10px 50px;
+    margin-bottom: 150px;
+    p{
+        font-family: font(body);
+        color: color(bg);
+        font-size: 2em;
+    }
+}
+/* TRAVEL INFO PANEL AND LINK*/
+.content2{
+    background: color(greydark);
+    .parallax{
+        background-image: url("../images/indextravel.jpg");
+        height: 800px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }   
+}
+
+
+.title-box-b{
+    display: block;
+    margin: 200px 0 0 0;
+    min-height: 500px;
+    min-width: 500px;
+    text-align: center;
+    color: color(greylight);
+    h1{
+        font-family: font(header);
+        font-size: 4em;
+    }
+    h3{
+        font-family: font(body);
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+    a{
+        background: color(reddark);
+        border-radius: 15px;
+        font-family: font(body);
+        color: color(bg);
+        font-size: 1.5em;
+        padding: 25px;
+        text-decoration: none;
+    }
+}
+/*EVENTS INFO PANEL AND LINK*/
+.content3{
+    background: color(reddark);
+    color: color(bg);
+    
+    .parallax{
+        background-image: url("../images/indexfest.jpg");
+        height: 800px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      } 
+      
+
+}
+
+.title-box-c{
+    text-align: center;
+    min-height: 400px;
+    margin-bottom: 0;
+    padding: 20px 20px 50px 20px;
+    h1{
+        font-family: font(header);
+        font-size: 3em;
+    } 
+    h3{
+        font-family: font(body);
+        font-size: 2em;
+        margin-bottom: 50px;
+    } 
+    a{
+        background: color(greydark);
+        border-radius: 15px;
+        font-family: font(body);
+        color: color(bg);
+        font-size: 1.5em;
+        padding: 25px;
+        text-decoration: none;
+    }
+}
+
+/* CITY PAGES*/
+.tokyo{
+
+    .top-container {
+        background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url(../images/tokyohero.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 300px;
+        text-align: center;
+        color: color(bg);
+        h1{
+            font-family: font(header);
+            font-size: 5em;
+        }
+        p{
+            font-size: 2em;
+        }
+          }
+    .header {
+        padding: 10px 16px;
+        background: color(greydark);
+        color: #f1f1f1;
+        position: sticky;
+        position: -webkit- sticky;
+        top: 0;
+        width: 100%;
+
+      }
+
+
+   
+    .content2{
+        background: color(greydark);
+        .parallax{
+            background-image: url(../images/tokyo2.jpg);
+            height: 800px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }   
+    }
+    
+    
+    .title-box-b{
+        display: block;
+        margin: 200px 0 0 0;
+        min-height: 500px;
+        min-width: 500px;
+        text-align: center;
+        color: color(greylight);
+        padding: 0 30px 20px 30px;
+        h1{
+            font-family: font(header);
+            font-size: 4em;
+        }
+        h3{
+            font-family: font(body);
+            font-size: 3em;
+            margin-bottom: 40px;
+        }
+
+    }
+    .content3{
+        background: color(reddark);
+        color: color(bg);
+        
+        .parallax{
+            background-image: url(../images/tokyo3.jpg);
+            height: 800px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          } 
+    }
+    
+    .title-box-c{
+        text-align: center;
+        min-height: 400px;
+        margin-bottom: 0;
+        padding: 0 30px 20px 30px;
+        h1{
+            font-family: font(header);
+            font-size: 4em;
+        } 
+        h3{
+            font-family: font(body);
+            font-size: 3em;
+            margin-bottom: 50px;
+        } 
+    }
+
+    .content4{
+        background: color(greydark);
+        color: color(greylight);
+        
+        .parallax{
+            background-image: url(../images/tokyo4.jpg);
+            height: 800px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          } 
+    }
+
+    .title-box-d{
+        text-align: center;
+        min-height: 400px;
+        margin-bottom: 0;
+        padding: 0 30px 20px 30px;
+        h1{
+            font-family: font(header);
+            font-size: 4em;
+        } 
+        h3{
+            font-family: font(body);
+            font-size: 3em;
+            margin-bottom: 50px;
+        } 
+    }
+}
+
+.kyoto{
+    .top-container {
+        background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url(../images/kyotohero.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 300px;
+        text-align: center;
+        color: color(bg);
+        h1{
+            font-family: font(header);
+            font-size: 5em;
+        }
+        p{
+            font-size: 2em;
+            font-family: font(body);
+        }       
+    }
+        .header {
+            padding: 10px 16px;
+            background: color(greydark);
+            color: #f1f1f1;
+            position: sticky;
+            position: -webkit- sticky;
+            top: 0;
+            width: 100%;
+    
+          }
+          
+        .content2{
+            background: color(greydark);
+            .parallax{
+                background-image: url(../images/kyoto2.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }   
+        }
+        
+        
+        .title-box-b{
+            display: block;
+            margin: 200px 0 0 0;
+            min-height: 500px;
+            min-width: 500px;
+            text-align: center;
+            color: color(greylight);
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            }
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 40px;
+            }
+    
+        }
+        .content3{
+            background: color(reddark);
+            color: color(bg);
+            
+            .parallax{
+                background-image: url(../images/kyoto3.jpeg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              } 
+        }
+        
+        .title-box-c{
+            text-align: center;
+            min-height: 400px;
+            margin-bottom: 0;
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            } 
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 50px;
+            } 
+        }
+    
+        .content4{
+            background: color(greydark);
+            color: color(greylight);
+            
+            .parallax{
+                background-image: url(../images/kyoto4.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              } 
+        }
+    
+        .title-box-d{
+            text-align: center;
+            min-height: 400px;
+            margin-bottom: 0;
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            } 
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 50px;
+            } 
+        }
+}
+
+
+.nara{
+    .top-container {
+        background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url(../images/narahero.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 300px;
+        text-align: center;
+        color: color(bg);
+        h1{
+            font-family: font(header);
+            font-size: 5em;
+        }
+        p{
+            font-size: 2em;
+        }
+    }
+        .header {
+            padding: 10px 16px;
+            background: color(greydark);
+            color: #f1f1f1;
+            position: sticky;
+            position: -webkit- sticky;
+            top: 0;
+            width: 100%;
+    
+          }
+          
+          .content2{
+            background: color(greydark);
+            .parallax{
+                background-image: url(../images/nara2.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }   
+        }
+        
+        
+        .title-box-b{
+            display: block;
+            margin: 200px 0 0 0;
+            min-height: 500px;
+            min-width: 500px;
+            text-align: center;
+            color: color(greylight);
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            }
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 40px;
+            }
+    
+        }
+        .content3{
+            background: color(reddark);
+            color: color(bg);
+            
+            .parallax{
+                background-image: url(../images/nara3.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              } 
+        }
+        
+        .title-box-c{
+            text-align: center;
+            min-height: 400px;
+            margin-bottom: 0;
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            } 
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 50px;
+            } 
+        }
+    
+        .content4{
+            background: color(greydark);
+            color: color(greylight);
+            
+            .parallax{
+                background-image: url(../images/nara4.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              } 
+        }
+    
+        .title-box-d{
+            text-align: center;
+            min-height: 400px;
+            margin-bottom: 0;
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            } 
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 50px;
+            } 
+        }
+}
+
+.okinawa{
+    .top-container {
+        background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url(../images/okinawahero.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 300px;
+        text-align: center;
+        color: color(bg);
+        h1{
+            font-family: font(header);
+            font-size: 5em;
+        }
+        p{
+            font-size: 2em;
+        }
+    }
+        .header {
+            padding: 10px 16px;
+            background: color(greydark);
+            color: #f1f1f1;
+            position: sticky;
+            position: -webkit- sticky;
+            top: 0;
+            width: 100%;
+            font-family: font(body);
+          }
+          
+          .content2{
+            background: color(greydark);
+            .parallax{
+                background-image: url(../images/okinawa2.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }   
+        }
+        
+        
+        .title-box-b{
+            display: block;
+            margin: 200px 0 0 0;
+            min-height: 500px;
+            min-width: 500px;
+            text-align: center;
+            color: color(greylight);
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            }
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 40px;
+            }
+    
+        }
+        .content3{
+            background: color(reddark);
+            color: color(bg);
+            
+            .parallax{
+                background-image: url(../images/okinawa3.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              } 
+        }
+        
+        .title-box-c{
+            text-align: center;
+            min-height: 400px;
+            margin-bottom: 0;
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            } 
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 50px;
+            } 
+        }
+    
+        .content4{
+            background: color(greydark);
+            color: color(greylight);
+            
+            .parallax{
+                background-image: url(../images/okinawa4.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              } 
+        }
+    
+        .title-box-d{
+            text-align: center;
+            min-height: 400px;
+            margin-bottom: 0;
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            } 
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 50px;
+            } 
+        }
+}
+
+.osaka{
+    .top-container {
+        background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url(../images/osakahero.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 300px;
+        text-align: center;
+        color: color(bg);
+        h1{
+            font-family: font(header);
+            font-size: 5em;
+        }
+        p{
+            font-size: 2em;
+            font-family: font(body);
+        }
+    }
+        .header {
+            padding: 10px 16px;
+            background: color(greydark);
+            color: #f1f1f1;
+            position: sticky;
+            position: -webkit- sticky;
+            top: 0;
+            width: 100%;
+    
+          }
+          
+          .content2{
+            background: color(greydark);
+            .parallax{
+                background-image: url(../images/osaka2.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }   
+        }
+        
+        
+        .title-box-b{
+            display: block;
+            margin: 200px 0 0 0;
+            min-height: 500px;
+            min-width: 500px;
+            text-align: center;
+            color: color(greylight);
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            }
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 40px;
+            }
+    
+        }
+        .content3{
+            background: color(reddark);
+            color: color(bg);
+            
+            .parallax{
+                background-image: url(../images/osaka3.jpeg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              } 
+        }
+        
+        .title-box-c{
+            text-align: center;
+            min-height: 400px;
+            margin-bottom: 0;
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            } 
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 50px;
+            } 
+        }
+    
+        .content4{
+            background: color(greydark);
+            color: color(greylight);
+            
+            .parallax{
+                background-image: url(../images/osaka4.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              } 
+        }
+    
+        .title-box-d{
+            text-align: center;
+            min-height: 400px;
+            margin-bottom: 0;
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            } 
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 50px;
+            } 
+        }
+}
+
+.sapporo{
+    .top-container {
+        background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url(../images/sapporohero.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 300px;
+        text-align: center;
+        color: color(bg);
+        h1{
+            font-family: font(header);
+            font-size: 5em;
+        }
+        p{
+            font-size: 2em;
+            font-family: font(body);
+        }
+    }
+        .header {
+            padding: 10px 16px;
+            background: color(greydark);
+            color: #f1f1f1;
+            position: sticky;
+            position: -webkit- sticky;
+            top: 0;
+            width: 100%;
+    
+          }
+          
+
+          .content2{
+            background: color(greydark);
+            .parallax{
+                background-image: url(../images/sapporo2.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }   
+        }
+        
+        
+        .title-box-b{
+            display: block;
+            margin: 200px 0 0 0;
+            min-height: 500px;
+            min-width: 500px;
+            text-align: center;
+            color: color(greylight);
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            }
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 40px;
+            }
+    
+        }
+        .content3{
+            background: color(reddark);
+            color: color(bg);
+            
+            .parallax{
+                background-image: url(../images/sapporo3.JPG);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              } 
+        }
+        
+        .title-box-c{
+            text-align: center;
+            min-height: 400px;
+            margin-bottom: 0;
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            } 
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 50px;
+            } 
+        }
+    
+        .content4{
+            background: color(greydark);
+            color: color(greylight);
+            
+            .parallax{
+                background-image: url(../images/sapporo4.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              } 
+        }
+    
+        .title-box-d{
+            text-align: center;
+            min-height: 400px;
+            margin-bottom: 0;
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            } 
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 50px;
+            } 
+        }
+}
+
+.wakayama{
+    .top-container {
+        background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url(../images/wakayamahero.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 300px;
+        text-align: center;
+        color: color(bg);
+        h1{
+            font-family: font(header);
+            font-size: 5em;
+        }
+        p{
+            font-size: 2em;
+        }
+    }
+        .header {
+            padding: 10px 16px;
+            background: color(greydark);
+            color: #f1f1f1;
+            position: sticky;
+            position: -webkit- sticky;
+            top: 0;
+            width: 100%;
+    
+          }
+          
+          .content2{
+            background: color(greydark);
+            .parallax{
+                background-image: url(../images/wakayama2.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }   
+        }
+        
+        
+        .title-box-b{
+            display: block;
+            margin: 200px 0 0 0;
+            min-height: 500px;
+            min-width: 500px;
+            text-align: center;
+            color: color(greylight);
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            }
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 40px;
+            }
+    
+        }
+        .content3{
+            background: color(reddark);
+            color: color(bg);
+            
+            .parallax{
+                background-image: url(../images/wakayama3.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              } 
+        }
+        
+        .title-box-c{
+            text-align: center;
+            min-height: 400px;
+            margin-bottom: 0;
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            } 
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 50px;
+            } 
+        }
+    
+        .content4{
+            background: color(greydark);
+            color: color(greylight);
+            
+            .parallax{
+                background-image: url(../images/wakayama4.jpg);
+                height: 800px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              } 
+        }
+    
+        .title-box-d{
+            text-align: center;
+            min-height: 400px;
+            margin-bottom: 0;
+            padding: 0 30px 20px 30px;
+            h1{
+                font-family: font(header);
+                font-size: 4em;
+            } 
+            h3{
+                font-family: font(body);
+                font-size: 3em;
+                margin-bottom: 50px;
+            } 
+        }
+}
+
+.events{
+    h1{
+        font-family: font(header);
+        font-size: 3em;
+        color: color(reddark);
+        text-align: center;
+        margin: auto;
+        padding: 15px;
+    }
+    h2{
+        font-family: font(header);
+        font-size: 2.5em;
+        color: color(reddark);
+        text-align: center;
+        margin: auto;
+        padding: 15px;
+    }
+
+    h3{
+        font-family: font(body);
+        font-size: 2em;
+        color: color(greydark);
+        text-align: center;
+        margin: auto;
+        padding: 50px;
+    }
+    img{
+        width: 60%;
+        display: block;
+        margin: auto;
+        padding: 20px;
+    }
+    iframe{
+        display: block;
+        margin: 0 auto 40px auto;
+
+    }
+}
+.travel{
+    #travel-content{
+
+        
+        h1{
+            font-family: font(header);
+            font-size: 3em;
+            color: color(reddark);
+            text-align: center;
+            margin: auto;
+            padding: 15px;
+        }
+        h2{
+            font-family: font(header);
+            font-size: 2.5em;
+            color: color(reddark);
+            text-align: center;
+            margin: auto;
+            padding: 15px;
+        }
+
+        h3{
+            font-family: font(body);
+            font-size: 2em;
+            color: color(greydark);
+            text-align: center;
+            margin: auto;
+            padding: 50px;
+        }
+        img{
+            width: 60%;
+            display: block;
+            margin: auto;
+            padding: 20px;
+        }
+        hr{
+            width: 75%;
+        }
+    }
+}
+/* NAVBAR SETTINGS */
+
+ .navbar {
+    overflow: hidden;
+    background-color: color(greydark) ;
+    font-family: font(body);
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: color(bg);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: color(bg);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: color(redlight);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: color(bg);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: color(reddark);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: color(redlight);
+    color: color(bg);
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*FORM*/
+
+.form-section{
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+    
+    h2{
+        font-size: 1.5em;
+        font-family: font(header);
+        color: color(reddark);
+    }
+    label{
+        font-family: font(body);
+    }
+    textarea{
+        font-family: font(body);
+        border-style: none;
+        border-radius: 5px;
+        padding: 3px;
+    }
+    input{
+        border-style: none;
+        border-radius: 10px;
+        padding: 3px;
+        margin:3px;
+    }
+    #submit{
+        background: color(greydark);
+        color: color(bg);
+        padding: 10px;
+    }
+    #clear{
+        background: color(reddark);
+        color: color(bg); 
+        padding: 10px;  
+    }
+}
+
+/*FOOTER*/
+.footer-stuff{
+    display: inline-block;
+    background: color(greydark);
+    color: color(greylight);
+    font-family: font(body);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    a{
+        text-decoration: none;
+    }
+    a:visited{
+        color: color(redlight);
+    }
+}

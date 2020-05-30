@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Eczar|Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <title>Welcome to Japan</title>
+</head>
+<body class="index">
+    <div class="top-container">
+        <h1>Welcome to Japan</h1>
+        <p>See Japan like never before</p>
+      </div>
+
+    <div class="content">
+      <div class="title-copy">
+        <h1>Come see the Land of the Rising Sun like you've never imagined before</h1>
+        <h3>Whether you want to experience life at lightspeed in the modern megalopolis of Tokyo, hike ancient pilgramage trails, snowboard at an Olympic snow park, or relax at the beach, Japan is guaranteed to have something for you!</h3>
+        </div>
+        <div class="title-box-a">
+            <p>Clean your plate in Osaka. Catch a wave in Wakayama.</p> 
+            <p>Melt your stress away in an Onsen in Kyoto.</p>  
+            <p>Japan's cities are bursting with personality. </p> 
+            <p>Discover them for yourself. Click below to learn more.</p> 
+        </div>
+        <div class="grid">
+            <a href="http://nova.umuc.edu/~ct386c07/project4/tokyo.html" class="grid-item"><p>Tokyo</p></a>
+            <a href="http://nova.umuc.edu/~ct386c07/project4/kyoto.html" class="grid-item"><p>Kyoto</p></a>
+            <a href="http://nova.umuc.edu/~ct386c07/project4/osaka.html" class="grid-item"><p>Osaka</p></a>
+            <a href="http://nova.umuc.edu/~ct386c07/project4/sapporo.html" class="grid-item"><p>Sapporo</p></a>
+            <a href="http://nova.umuc.edu/~ct386c07/project4/wakayama.html" class="grid-item"><p>Wakayama</p></a>
+            <a href="http://nova.umuc.edu/~ct386c07/project4/nara.html" class="grid-item"><p>Nara</p></a>
+            <a href="http://nova.umuc.edu/~ct386c07/project4/okinawa.html" class="grid-item"><p>Okinawa</p></a>
+        </div>
+        <div class="content2">
+        <div class="parallax"></div>
+        <div class="title-box-b">
+            <h1>Find out how traveling in Japan is like no where else on Earth</h1>
+            <h3>Learn more about Japan's unique travel industry</h3>
+            <a href="http://nova.umuc.edu/~ct386c07/project4/travel.html">Click Here</a>
+        </div>
+            </div>
+        <div class="content3">
+            <div class="parallax"></div>
+            <div class="title-box-c">
+                <h1>Japanese love festivals. We welcome the world to come celebrate with us</h1>
+                <h3>Festivals are hosted around the country all year long.</h3>
+                <h3>Find out what unique events happen in Japan throughout the year</h3>
+                <a href="http://nova.umuc.edu/~ct386c07/project4/events.html">Click Here</a>
+            </div>
+        </div>
+    </div>
+    <div class="form-section">
+        <h2>If you have any questions regarding travel to Japan, send it to us below and we will be glad to help you</h2>
+        <form name="askForm"action="mailto:tourism@japan.com" method="get" enctype="text/plain" onsubmit="return validation()">
+          <div>
+            <label for="name">Name: 
+            <input type="text" name="name" id="name"/>
+            </label>
+          </div>
+          <div>
+            <label for="email">Email: 
+            <input type="text" name="email" id="email"/>
+            </label>
+          </div>
+          <div>
+            <label>Comments:
+            <br />
+            <textarea name="comments" rows = "5" cols = "50">Please ask your question here</textarea>
+          </div>
+          <div>
+            <input id="submit" type="submit" name="submit" value="Send" />
+            <input id="clear" type="reset" name="reset" value="Clear Form" />
+            <script>
+                function validation(){
+                    var x = document.forms["askForm"]["name"].value;
+                    if (x==""){
+                        alert("Please enter a name");
+                        return false;
+                    }
+                }
+            </script>
+          </div>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-stuff">
+        <a href="https://tesarge.github.io/japan/policy.html">Our Privacy Policy</a>
+        <p id="time"></p>
+        <script>
+        var d = new Date();
+        document.getElementById("time").innerHTML = d;
+        </script>
+        </div>
+    </footer>
+</body>
+</html>
+
+

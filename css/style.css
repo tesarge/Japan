@@ -1,0 +1,1321 @@
+body {
+  margin: 0;
+  background: #EDF2F4;
+}
+
+/*REFER TO .SCSS FILE FOR CHANGES*/
+/*HOME PAGE*/
+.index .top-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/indexhero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/indexhero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px;
+  text-align: center;
+  color: #EDF2F4;
+}
+
+.index .top-container h1 {
+  font-family: "Eczar";
+  font-size: 5em;
+}
+
+.index .top-container p {
+  font-size: 2em;
+}
+
+.title-copy {
+  margin: 200px;
+}
+
+.title-copy h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #D90429;
+  font-family: "Eczar";
+}
+
+.title-copy h3 {
+  font-family: "Lato";
+  font-size: 2em;
+}
+
+/* LINKS TO CITY PAGES FROM HOME*/
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  margin-bottom: 150px;
+}
+
+.grid-item {
+  min-width: 250px;
+  min-height: 250px;
+  background: #2B2D42;
+  color: #EDF2F4;
+  border-radius: 5px;
+  margin: 10px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  text-decoration: none;
+}
+
+.grid-item p {
+  margin: 110px 0 0 0;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Lato";
+}
+
+.grid-item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background: #D90429 1s;
+}
+
+.title-box-a {
+  min-height: 250px;
+  min-width: 1700px;
+  -webkit-clip-path: polygon(0% 0%, 50% 0, 55% 50%, 50% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 50% 0, 55% 50%, 50% 100%, 0% 100%);
+  background: #EF233C;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 100px 10px 50px;
+  margin-bottom: 150px;
+}
+
+.title-box-a p {
+  font-family: "Lato";
+  color: #EDF2F4;
+  font-size: 2em;
+}
+
+/* TRAVEL INFO PANEL AND LINK*/
+.content2 {
+  background: #2B2D42;
+}
+
+.content2 .parallax {
+  background-image: url("../images/indextravel.jpg");
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-box-b {
+  display: block;
+  margin: 200px 0 0 0;
+  min-height: 500px;
+  min-width: 500px;
+  text-align: center;
+  color: #8D99AE;
+}
+
+.title-box-b h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.title-box-b h3 {
+  font-family: "Lato";
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.title-box-b a {
+  background: #D90429;
+  border-radius: 15px;
+  font-family: "Lato";
+  color: #EDF2F4;
+  font-size: 1.5em;
+  padding: 25px;
+  text-decoration: none;
+}
+
+/*EVENTS INFO PANEL AND LINK*/
+.content3 {
+  background: #D90429;
+  color: #EDF2F4;
+}
+
+.content3 .parallax {
+  background-image: url("../images/indexfest.jpg");
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-box-c {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 20px 20px 50px 20px;
+}
+
+.title-box-c h1 {
+  font-family: "Eczar";
+  font-size: 3em;
+}
+
+.title-box-c h3 {
+  font-family: "Lato";
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.title-box-c a {
+  background: #2B2D42;
+  border-radius: 15px;
+  font-family: "Lato";
+  color: #EDF2F4;
+  font-size: 1.5em;
+  padding: 25px;
+  text-decoration: none;
+}
+
+/* CITY PAGES*/
+.tokyo .top-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/tokyohero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/tokyohero.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px;
+  text-align: center;
+  color: #EDF2F4;
+}
+
+.tokyo .top-container h1 {
+  font-family: "Eczar";
+  font-size: 5em;
+}
+
+.tokyo .top-container p {
+  font-size: 2em;
+}
+
+.tokyo .header {
+  padding: 10px 16px;
+  background: #2B2D42;
+  color: #f1f1f1;
+  position: -webkit-sticky;
+  position: sticky;
+  position: -webkit- -webkit-sticky;
+  position: -webkit- sticky;
+  top: 0;
+  width: 100%;
+}
+
+.tokyo .content2 {
+  background: #2B2D42;
+}
+
+.tokyo .content2 .parallax {
+  background-image: url(../images/tokyo2.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tokyo .title-box-b {
+  display: block;
+  margin: 200px 0 0 0;
+  min-height: 500px;
+  min-width: 500px;
+  text-align: center;
+  color: #8D99AE;
+  padding: 0 30px 20px 30px;
+}
+
+.tokyo .title-box-b h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.tokyo .title-box-b h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.tokyo .content3 {
+  background: #D90429;
+  color: #EDF2F4;
+}
+
+.tokyo .content3 .parallax {
+  background-image: url(../images/tokyo3.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tokyo .title-box-c {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 0 30px 20px 30px;
+}
+
+.tokyo .title-box-c h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.tokyo .title-box-c h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.tokyo .content4 {
+  background: #2B2D42;
+  color: #8D99AE;
+}
+
+.tokyo .content4 .parallax {
+  background-image: url(../images/tokyo4.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tokyo .title-box-d {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 0 30px 20px 30px;
+}
+
+.tokyo .title-box-d h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.tokyo .title-box-d h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.kyoto .top-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/kyotohero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/kyotohero.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px;
+  text-align: center;
+  color: #EDF2F4;
+}
+
+.kyoto .top-container h1 {
+  font-family: "Eczar";
+  font-size: 5em;
+}
+
+.kyoto .top-container p {
+  font-size: 2em;
+  font-family: "Lato";
+}
+
+.kyoto .header {
+  padding: 10px 16px;
+  background: #2B2D42;
+  color: #f1f1f1;
+  position: -webkit-sticky;
+  position: sticky;
+  position: -webkit- -webkit-sticky;
+  position: -webkit- sticky;
+  top: 0;
+  width: 100%;
+}
+
+.kyoto .content2 {
+  background: #2B2D42;
+}
+
+.kyoto .content2 .parallax {
+  background-image: url(../images/kyoto2.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kyoto .title-box-b {
+  display: block;
+  margin: 200px 0 0 0;
+  min-height: 500px;
+  min-width: 500px;
+  text-align: center;
+  color: #8D99AE;
+  padding: 0 30px 20px 30px;
+}
+
+.kyoto .title-box-b h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.kyoto .title-box-b h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.kyoto .content3 {
+  background: #D90429;
+  color: #EDF2F4;
+}
+
+.kyoto .content3 .parallax {
+  background-image: url(../images/kyoto3.jpeg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kyoto .title-box-c {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 0 30px 20px 30px;
+}
+
+.kyoto .title-box-c h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.kyoto .title-box-c h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.kyoto .content4 {
+  background: #2B2D42;
+  color: #8D99AE;
+}
+
+.kyoto .content4 .parallax {
+  background-image: url(../images/kyoto4.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kyoto .title-box-d {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 0 30px 20px 30px;
+}
+
+.kyoto .title-box-d h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.kyoto .title-box-d h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.nara .top-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/narahero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/narahero.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px;
+  text-align: center;
+  color: #EDF2F4;
+}
+
+.nara .top-container h1 {
+  font-family: "Eczar";
+  font-size: 5em;
+}
+
+.nara .top-container p {
+  font-size: 2em;
+}
+
+.nara .header {
+  padding: 10px 16px;
+  background: #2B2D42;
+  color: #f1f1f1;
+  position: -webkit-sticky;
+  position: sticky;
+  position: -webkit- -webkit-sticky;
+  position: -webkit- sticky;
+  top: 0;
+  width: 100%;
+}
+
+.nara .content2 {
+  background: #2B2D42;
+}
+
+.nara .content2 .parallax {
+  background-image: url(../images/nara2.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nara .title-box-b {
+  display: block;
+  margin: 200px 0 0 0;
+  min-height: 500px;
+  min-width: 500px;
+  text-align: center;
+  color: #8D99AE;
+  padding: 0 30px 20px 30px;
+}
+
+.nara .title-box-b h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.nara .title-box-b h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.nara .content3 {
+  background: #D90429;
+  color: #EDF2F4;
+}
+
+.nara .content3 .parallax {
+  background-image: url(../images/nara3.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nara .title-box-c {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 0 30px 20px 30px;
+}
+
+.nara .title-box-c h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.nara .title-box-c h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.nara .content4 {
+  background: #2B2D42;
+  color: #8D99AE;
+}
+
+.nara .content4 .parallax {
+  background-image: url(../images/nara4.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nara .title-box-d {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 0 30px 20px 30px;
+}
+
+.nara .title-box-d h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.nara .title-box-d h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.okinawa .top-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/okinawahero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/okinawahero.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px;
+  text-align: center;
+  color: #EDF2F4;
+}
+
+.okinawa .top-container h1 {
+  font-family: "Eczar";
+  font-size: 5em;
+}
+
+.okinawa .top-container p {
+  font-size: 2em;
+}
+
+.okinawa .header {
+  padding: 10px 16px;
+  background: #2B2D42;
+  color: #f1f1f1;
+  position: -webkit-sticky;
+  position: sticky;
+  position: -webkit- -webkit-sticky;
+  position: -webkit- sticky;
+  top: 0;
+  width: 100%;
+  font-family: "Lato";
+}
+
+.okinawa .content2 {
+  background: #2B2D42;
+}
+
+.okinawa .content2 .parallax {
+  background-image: url(../images/okinawa2.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.okinawa .title-box-b {
+  display: block;
+  margin: 200px 0 0 0;
+  min-height: 500px;
+  min-width: 500px;
+  text-align: center;
+  color: #8D99AE;
+  padding: 0 30px 20px 30px;
+}
+
+.okinawa .title-box-b h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.okinawa .title-box-b h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.okinawa .content3 {
+  background: #D90429;
+  color: #EDF2F4;
+}
+
+.okinawa .content3 .parallax {
+  background-image: url(../images/okinawa3.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.okinawa .title-box-c {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 0 30px 20px 30px;
+}
+
+.okinawa .title-box-c h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.okinawa .title-box-c h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.okinawa .content4 {
+  background: #2B2D42;
+  color: #8D99AE;
+}
+
+.okinawa .content4 .parallax {
+  background-image: url(../images/okinawa4.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.okinawa .title-box-d {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 0 30px 20px 30px;
+}
+
+.okinawa .title-box-d h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.okinawa .title-box-d h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.osaka .top-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/osakahero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/osakahero.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px;
+  text-align: center;
+  color: #EDF2F4;
+}
+
+.osaka .top-container h1 {
+  font-family: "Eczar";
+  font-size: 5em;
+}
+
+.osaka .top-container p {
+  font-size: 2em;
+  font-family: "Lato";
+}
+
+.osaka .header {
+  padding: 10px 16px;
+  background: #2B2D42;
+  color: #f1f1f1;
+  position: -webkit-sticky;
+  position: sticky;
+  position: -webkit- -webkit-sticky;
+  position: -webkit- sticky;
+  top: 0;
+  width: 100%;
+}
+
+.osaka .content2 {
+  background: #2B2D42;
+}
+
+.osaka .content2 .parallax {
+  background-image: url(../images/osaka2.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.osaka .title-box-b {
+  display: block;
+  margin: 200px 0 0 0;
+  min-height: 500px;
+  min-width: 500px;
+  text-align: center;
+  color: #8D99AE;
+  padding: 0 30px 20px 30px;
+}
+
+.osaka .title-box-b h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.osaka .title-box-b h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.osaka .content3 {
+  background: #D90429;
+  color: #EDF2F4;
+}
+
+.osaka .content3 .parallax {
+  background-image: url(../images/osaka3.jpeg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.osaka .title-box-c {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 0 30px 20px 30px;
+}
+
+.osaka .title-box-c h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.osaka .title-box-c h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.osaka .content4 {
+  background: #2B2D42;
+  color: #8D99AE;
+}
+
+.osaka .content4 .parallax {
+  background-image: url(../images/osaka4.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.osaka .title-box-d {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 0 30px 20px 30px;
+}
+
+.osaka .title-box-d h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.osaka .title-box-d h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.sapporo .top-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/sapporohero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sapporohero.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px;
+  text-align: center;
+  color: #EDF2F4;
+}
+
+.sapporo .top-container h1 {
+  font-family: "Eczar";
+  font-size: 5em;
+}
+
+.sapporo .top-container p {
+  font-size: 2em;
+  font-family: "Lato";
+}
+
+.sapporo .header {
+  padding: 10px 16px;
+  background: #2B2D42;
+  color: #f1f1f1;
+  position: -webkit-sticky;
+  position: sticky;
+  position: -webkit- -webkit-sticky;
+  position: -webkit- sticky;
+  top: 0;
+  width: 100%;
+}
+
+.sapporo .content2 {
+  background: #2B2D42;
+}
+
+.sapporo .content2 .parallax {
+  background-image: url(../images/sapporo2.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sapporo .title-box-b {
+  display: block;
+  margin: 200px 0 0 0;
+  min-height: 500px;
+  min-width: 500px;
+  text-align: center;
+  color: #8D99AE;
+  padding: 0 30px 20px 30px;
+}
+
+.sapporo .title-box-b h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.sapporo .title-box-b h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.sapporo .content3 {
+  background: #D90429;
+  color: #EDF2F4;
+}
+
+.sapporo .content3 .parallax {
+  background-image: url(../images/sapporo3.JPG);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sapporo .title-box-c {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 0 30px 20px 30px;
+}
+
+.sapporo .title-box-c h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.sapporo .title-box-c h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.sapporo .content4 {
+  background: #2B2D42;
+  color: #8D99AE;
+}
+
+.sapporo .content4 .parallax {
+  background-image: url(../images/sapporo4.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sapporo .title-box-d {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 0 30px 20px 30px;
+}
+
+.sapporo .title-box-d h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.sapporo .title-box-d h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.wakayama .top-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/wakayamahero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/wakayamahero.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px;
+  text-align: center;
+  color: #EDF2F4;
+}
+
+.wakayama .top-container h1 {
+  font-family: "Eczar";
+  font-size: 5em;
+}
+
+.wakayama .top-container p {
+  font-size: 2em;
+}
+
+.wakayama .header {
+  padding: 10px 16px;
+  background: #2B2D42;
+  color: #f1f1f1;
+  position: -webkit-sticky;
+  position: sticky;
+  position: -webkit- -webkit-sticky;
+  position: -webkit- sticky;
+  top: 0;
+  width: 100%;
+}
+
+.wakayama .content2 {
+  background: #2B2D42;
+}
+
+.wakayama .content2 .parallax {
+  background-image: url(../images/wakayama2.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wakayama .title-box-b {
+  display: block;
+  margin: 200px 0 0 0;
+  min-height: 500px;
+  min-width: 500px;
+  text-align: center;
+  color: #8D99AE;
+  padding: 0 30px 20px 30px;
+}
+
+.wakayama .title-box-b h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.wakayama .title-box-b h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.wakayama .content3 {
+  background: #D90429;
+  color: #EDF2F4;
+}
+
+.wakayama .content3 .parallax {
+  background-image: url(../images/wakayama3.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wakayama .title-box-c {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 0 30px 20px 30px;
+}
+
+.wakayama .title-box-c h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.wakayama .title-box-c h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.wakayama .content4 {
+  background: #2B2D42;
+  color: #8D99AE;
+}
+
+.wakayama .content4 .parallax {
+  background-image: url(../images/wakayama4.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wakayama .title-box-d {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 0;
+  padding: 0 30px 20px 30px;
+}
+
+.wakayama .title-box-d h1 {
+  font-family: "Eczar";
+  font-size: 4em;
+}
+
+.wakayama .title-box-d h3 {
+  font-family: "Lato";
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.events h1 {
+  font-family: "Eczar";
+  font-size: 3em;
+  color: #D90429;
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+}
+
+.events h2 {
+  font-family: "Eczar";
+  font-size: 2.5em;
+  color: #D90429;
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+}
+
+.events h3 {
+  font-family: "Lato";
+  font-size: 2em;
+  color: #2B2D42;
+  text-align: center;
+  margin: auto;
+  padding: 50px;
+}
+
+.events img {
+  width: 60%;
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
+
+.events iframe {
+  display: block;
+  margin: 0 auto 40px auto;
+}
+
+.travel #travel-content h1 {
+  font-family: "Eczar";
+  font-size: 3em;
+  color: #D90429;
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+}
+
+.travel #travel-content h2 {
+  font-family: "Eczar";
+  font-size: 2.5em;
+  color: #D90429;
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+}
+
+.travel #travel-content h3 {
+  font-family: "Lato";
+  font-size: 2em;
+  color: #2B2D42;
+  text-align: center;
+  margin: auto;
+  padding: 50px;
+}
+
+.travel #travel-content img {
+  width: 60%;
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
+
+.travel #travel-content hr {
+  width: 75%;
+}
+
+/* NAVBAR SETTINGS */
+.navbar {
+  overflow: hidden;
+  background-color: #2B2D42;
+  font-family: "Lato";
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #EDF2F4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #EDF2F4;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #EF233C;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #EDF2F4;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #D90429;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #EF233C;
+  color: #EDF2F4;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*FORM*/
+.form-section {
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+}
+
+.form-section h2 {
+  font-size: 1.5em;
+  font-family: "Eczar";
+  color: #D90429;
+}
+
+.form-section label {
+  font-family: "Lato";
+}
+
+.form-section textarea {
+  font-family: "Lato";
+  border-style: none;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.form-section input {
+  border-style: none;
+  border-radius: 10px;
+  padding: 3px;
+  margin: 3px;
+}
+
+.form-section #submit {
+  background: #2B2D42;
+  color: #EDF2F4;
+  padding: 10px;
+}
+
+.form-section #clear {
+  background: #D90429;
+  color: #EDF2F4;
+  padding: 10px;
+}
+
+/*FOOTER*/
+.footer-stuff {
+  display: inline-block;
+  background: #2B2D42;
+  color: #8D99AE;
+  font-family: "Lato";
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-stuff a {
+  text-decoration: none;
+}
+
+.footer-stuff a:visited {
+  color: #EF233C;
+}
+/*# sourceMappingURL=style.css.map */
